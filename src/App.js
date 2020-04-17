@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import History from "./components/history/history.component";
+import Today from "./components/today/today.component";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div className="top-header">
+        <header className="container">
+          <nav className="navbar">
+            <div className="navbar-brand">
+              <span className="navbar__item">PusherCoins</span>
+            </div>
+            <div className="navbar-end">
+              <a
+                className="navbar__item"
+                href="https://pusher.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pusher.com
+              </a>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <section className="results">
+        <div className="container">
+          <h1>
+            PusherCoins is a realtime price information about <br /> BTC, ETH,
+            and LTC.
+          </h1>
+        </div>
+        <div className="results__inner">
+          <Today />
+          <History />
+        </div>
+      </section>
     </div>
   );
 }

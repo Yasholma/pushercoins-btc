@@ -1,0 +1,43 @@
+.today {
+  margin-top: 2.5rem;
+  padding: 0 3.125rem;
+}
+
+.today h2 {
+  font-size: 1.25rem;
+}
+
+.today__box {
+  background: #fff;
+  padding: 1.25rem;
+  margin-top: 1.25rem 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btc__section,
+.eth__section {
+  text-align: center;
+  border-right: 1px solid #dae1e9;
+}
+
+.btc__section h5,
+.eth__section h5,
+.ltc__section h5 {
+  font-size: 1.875rem;
+}
+
+.ltc__section {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .eth__section,
+  .btc__section {
+    border-right: none;
+  }
+
+  .today {
+    margin-top: 3.125rem;
+  }
+}
